@@ -1,0 +1,13 @@
+DROP DATABASE franks;
+CREATE DATABASE franks;
+USE franks;
+CREATE TABLE user (id INT(8) AUTO_INCREMENT PRIMARY KEY, name VARCHAR(16), email VARCHAR(32), password VARCHAR(32), age INT(3), adress VARCHAR(32));
+INSERT INTO user (name, email, password, age, adress) VALUES("neo", "admin@admin.admin", "admin", 17, "solen 11");
+INSERT INTO user (name, email, password, age, adress) VALUES("a", "aa@aa.aa", "a", 1, "a");
+CREATE TABLE pro (id INT(8) AUTO_INCREMENT PRIMARY KEY, name VARCHAR(32), rab int(8), info VARCHAR(128), rating INT(1), displayInfo VARCHAR(128), gluten INT(1), pic VARCHAR(128));
+INSERT INTO pro (name, info, rating, displayInfo, gluten, pic) VALUES ("Crossant", "veri good", 5, "den smakar väldigt gott och kan ätas av alla", 0, "../produkt/produkter/crossant.jpg");
+INSERT INTO pro (name, info, rating, displayInfo, gluten, pic) VALUES ("Donut", "verri good", 9, "är som en valig donut men med en yta utav choklad", 1, "../produkt/produkter/donuts.jpg");
+INSERT INTO pro (name, info, rating, displayInfo, gluten, pic) VALUES ("Bulle", "made with love and cocaine", 2, "en vanlig bulle men med en otrolig smak", 2, "../produkt/produkter/boi.jpg");
+INSERT INTO pro (name, info, rating, displayInfo, gluten, pic) VALUES ("Donut", "socker", 7, "en helt vanlig donut med en yta utan socker", 0, "../produkt/produkter/donuts_socker.jpg");
+INSERT INTO pro (name, info, rating, displayInfo, gluten, pic) VALUES ("Pepparkaka", "peppar", 9, "peparkaksgubbar med en otroligt julig smak", 0, "../produkt/produkter/man.jpg");
+INSERT INTO pro (name, info, rating, displayInfo, gluten, pic) VALUES ("Donut", "donuts", 6, "en donut men en yta utav jordgubbs smak och strösell", 2, "../produkt/produkter/simpsons.jpg");

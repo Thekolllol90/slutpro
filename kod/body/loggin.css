@@ -1,0 +1,198 @@
+* { /*sänger av webbens egna inställnigar*/
+    margin: 0;
+    padding: 0;
+}
+
+#head { /*gör så att header sitter högst upp och följer med när man skrollar på sidan*/
+    position: fixed;
+    top: 0;
+}
+
+#flexx { /*gör så att allt innehåll lägger sig på ett snyggt sätt*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 25px;
+    position: relative;
+    z-index: 34;
+}
+
+#body2 { /*gör så att lite problem som jag inte kommer ihåg försvinner*/
+    position: relative;
+    z-index: -4
+}
+
+#body { /*gör backgrounden ljusgrå och gör så att bodyn börjar där headern slutar*/
+    background-color: lightgray;
+    margin-top: 100px;
+    position: relative;
+    z-index: -4;
+}
+
+h2 { /*css så titeln på vare ruta*/
+    margin: 10px;
+    font-size: 25px;
+}
+
+.email { /*css för all text i dom olika rutorna*/
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+#send { /*ändrar storlek på knappen man loggar in eller regisrerar med*/
+    font-size: 15px;
+    margin: 10px;
+}
+
+.box2 { /*ändrar hur rutan man skriver i ser ut*/
+    margin-left: 10px;
+    height: 20px;
+    width: 33%;
+    font-size: 1em;
+}
+
+#titel { /*storlek och background osv för titeln på sidan*/
+    width: 250px;
+    height: 30px;
+    border: solid black 5px;
+    font-size: 25px;
+    text-align: center;
+    background-color: gray;
+    margin-top: 25px;
+}
+
+#loggin {/*utsende för rutan som loggin är i*/
+    background-color: gray;
+    height: 200px;
+    width: 45%;
+    border: solid black 10px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    float: left;
+}
+
+br { /* gör så att br tagar inte gör något */
+    display: none;
+}
+
+#register {/*utseende för rutan som man registrera sig med*/
+    background-color: gray;
+    height: 360px;
+    width: 45%;
+    border: solid black 10px;
+    margin-top: 25px;
+}
+
+#menu { /*gör så burger menyn är under headern och följer med sidan*/
+    position: absolute;
+    margin-top: 100px;
+    border-bottom: solid black 3px;
+}
+
+.menu-item a { /*gör så texten i burger menyn inte ser ut som länkar*/
+    text-decoration: none;
+    color: black;
+}
+
+@media only screen and (max-width: 460px) { /*css för mobil vyn*/
+    #head {
+        position: fixed;
+        top: 0;
+    }
+
+    #flexx {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 25px;
+        position: relative;
+        z-index: 34;
+    }
+
+    .pro {
+        margin-top: 25px;
+    }
+
+    #body2 {
+        position: relative;
+        z-index: -4
+    }
+
+    #body {
+        background-color: lightgray;
+        margin-top: 250px;
+        position: relative;
+        z-index: -4;
+    }
+
+    h2 {
+        margin: 10px;
+        font-size: 40px;
+    }
+
+    .email {
+        font-size: 40px;
+        margin-top: 20px;
+        margin-left: 10px;
+        font-size: 45px;
+    }
+
+    #send {
+        font-size: 35px;
+        margin: 10px;
+        margin-top: 25px;
+    }
+
+    .box2 {
+        margin-left: 10px;
+        height: 50px;
+        width: 500px;
+        font-size: 2em;
+    }
+
+    #titel {
+        width: 650px;
+        height: 60px;
+        border: solid black 5px;
+        font-size: 50px;
+        text-align: center;
+        background-color: gray;
+        margin-top: 25px;
+    }
+
+    #loggin {
+        background-color: gray;
+        height: 400px;
+        width: 650px;
+        border: solid black 10px;
+        margin-top: 25px;
+    }
+
+    #register {
+        background-color: gray;
+        height: 800px;
+        width: 650px;
+        border: solid black 10px;
+        margin-top: 25px;
+    }
+
+    #space {
+        display: none;
+    }
+
+    #menu {
+        position: absolute;
+        margin-top: 249px;
+        border-bottom: solid black 3px;
+    }
+
+    .menu-item a {
+        text-decoration: none;
+        color: black;
+    }
+}

@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.produkt {
+    background-color: gray;
+    height: 350px;
+    width: 350px;
+    border: solid black 10px;
+}
+/*gör såa att alla produkters bilder kommer vara lika stora*/
+#pic {
+    margin: 30px;
+    border: solid black 5px;
+    width: 125px;
+    height: 100px;
+}
+
+#display {
+    font-size: 20px;
+    margin-left: 30px;
+    margin-right: 0;
+}
+
+#title {
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+#dis {
+    float: left;
+    width: 55%;
+}
+
+#plus {
+    width: 75px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 200px;
+}
+
+#button {
+    background-color: gray;
+    border: 0;
+    float: right;
+}
+
+@media only screen and (max-width: 460px) {
+    .produkt {
+        background-color: gray;
+        height: 650px;
+        width: 650px;
+        border: solid black 10px;
+    }
+
+    #pic {
+        margin: 30px;
+        border: solid black 5px;
+        width: 300px;
+        height: 200px;
+    }
+
+    #display {
+        font-size: 40px;
+        margin-left: 30px;
+        margin-right: 0;
+    }
+
+    #dis {
+        float: left;
+        width: 55%;
+    }
+
+    #plus {
+        width: 100px;
+        float: right;
+        margin-right: 10px;
+        margin-top: 450px;
+    }
+
+    #button {
+        background-color: gray;
+        border: 0;
+        float: right;
+    }
+}

@@ -1,0 +1,158 @@
+* { /*sänger av webbens egna inställnigar*/
+    margin: 0;
+    padding: 0;
+}
+
+#head { /*gör så att header sitter högst upp och följer med när man skrollar på sidan*/
+    position: fixed;
+    top: 0;
+}
+
+#parallax { /*skapar en parallax som ligger backom backgrunden*/
+    background-image: url('bageri.png');
+    height: 590px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    border-bottom: solid black 5px;
+    background-color: black;
+}
+
+#flexx { /*gör så att allt innehåll lägger sig på ett snyggt sätt*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 25px;
+    position: relative;
+    z-index: 34;
+    flex-wrap: wrap;
+}
+
+.pro { /*gör så alla produkt rutor lägger sig på ett snyggt sätt*/
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+
+#audio { /*vene va den gör men något med ljud filen som finns på under parallax*/
+    margin-bottom: 25px;
+    position: relative;
+    z-index: -1;
+
+}
+
+#body { /*gör backgrounden ljusgrå och gör så att bodyn börjar där headern slutar*/
+    background-color: lightgray;
+    margin-top: 100px;
+    position: relative;
+    z-index: -4;
+}
+
+#body2 { /*gör så att lite problem som jag inte kommer ihåg försvinner*/
+    position: relative;
+    z-index: -4;
+}
+
+#titel { /*storlek och background osv för titeln på sidan*/
+    width: 250px;
+    height: 30px;
+    border: solid black 5px;
+    font-size: 25px;
+    text-align: center;
+    background-color: gray;
+}
+
+#menu { /*gör så burger menyn är under headern och följer med sidan*/
+    position: absolute;
+    margin-top: 100px;
+    border-bottom: solid black 3px;
+}
+
+.menu-item a { /*gör så texten i burger menyn inte ser ut som länkar*/
+    text-decoration: none;
+    color: black;
+}
+
+.produkt { /*gör något*/
+    margin: 25px;
+}
+
+@media only screen and (max-width: 460px) { /*css för mobil vy*/
+
+
+    
+    #head {
+        position: fixed;
+        top: 0;
+    }
+
+    #parallax {
+        background-image: url('bageri.png');
+        height: 320px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: repeat;
+        background-size: auto;
+        border-bottom: solid black 5px;
+    }
+
+    #flexx {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 25px;
+        position: relative;
+        z-index: 34;
+    }
+
+    .pro {
+        margin-top: 25px;
+    }
+
+    #audio {
+        margin-bottom: 25px;
+        position: relative;
+        z-index: -1;
+
+    }
+
+    #body {
+        background-color: lightgray;
+        margin-top: 250px;
+        position: relative;
+        z-index: -4;
+    }
+
+    #body2 {
+        position: relative;
+        z-index: -4;
+    }
+
+    #titel {
+        width: 450px;
+        height: 60px;
+        border: solid black 5px;
+        font-size: 50px;
+        text-align: center;
+        background-color: gray;
+    }
+
+    #menu {
+        position: absolute;
+        margin-top: 249px;
+        border-bottom: solid black 3px;
+    }
+
+    .menu-item a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .produkt {
+        margin-bottom: 25px;
+    }
+}

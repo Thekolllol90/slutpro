@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#head {
+    position: fixed;
+    top: 0;
+}
+
+#flexx {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.pro {
+    margin-top: 25px;
+}
+
+#body {
+    background-color: lightgray;
+    margin-top: 100px;
+}
+
+#titel {
+    width: 250px;
+    height: 30px;
+    border: solid black 5px;
+    font-size: 25px;
+    text-align: center;
+    background-color: gray;
+    position: relative;
+    margin-top: 150px;
+    margin-left: 45%;
+}
+
+#time {
+    width: 35%;
+    background-color: gray;
+    height: 280px;
+    margin-top: 25px;
+    border: solid black 5px;
+}
+
+.topText {
+    font-size: 30px;
+    margin: 5px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.cont {
+    font-size: 20px;
+    margin: 5px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#inf {
+    width: 35%;
+    background-color: gray;
+    height: 200px;
+    margin-top: 25px;
+    border: solid black 5px;
+}
+
+#tak {
+    width: 35%;
+    background-color: gray;
+    height: 220px;
+    margin-top: 25px;
+    border: solid black 5px;
+}
+
+#menu {
+    position: absolute;
+    margin-top: 99px;
+    border-bottom: solid black 3px;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: black;
+}
+
+@media only screen and(max-width: 460px) {
+    #head {
+        position: fixed;
+        top: 0;
+    }
+
+    #flexx {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 25px;
+    }
+
+    .pro {
+        margin-top: 25px;
+    }
+
+    #body {
+        background-color: lightgray;
+        margin-top: 250px;
+    }
+
+    #titel {
+        width: 450px;
+        height: 60px;
+        border: solid black 5px;
+        font-size: 50px;
+        text-align: center;
+        background-color: gray;
+        margin-top: 25px;
+    }
+
+    #time {
+        width: 70%;
+        background-color: gray;
+        height: 500px;
+        margin-top: 25px;
+        border: solid black 5px;
+    }
+
+    .topText {
+        font-size: 60px;
+        margin: 5px;
+        text-decoration: underline;
+        text-align: center;
+    }
+
+    .cont {
+        font-size: 40px;
+        margin: 5px;
+        margin-top: 10px;
+    }
+
+    #inf {
+        width: 70%;
+        background-color: gray;
+        height: 400px;
+        margin-top: 25px;
+        border: solid black 5px;
+    }
+
+    #tak {
+        width: 70%;
+        background-color: gray;
+        height: 400px;
+        margin-top: 25px;
+        border: solid black 5px;
+    }
+
+    #menu {
+        position: absolute;
+        margin-top: 249px;
+        border-bottom: solid black 3px;
+    }
+
+    .menu-item a {
+        text-decoration: none;
+        color: black;
+    }
+}

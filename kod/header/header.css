@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#head {
+    width: 100%;
+    height: 100px;
+    background-color: gray;
+    z-index: 2;
+}
+
+#flex { /*gör så att objeken i headern ligger snyggt*/
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#logga {
+    width: 75px;
+}
+
+#kon {
+    z-index: 99999;
+}
+
+#cart {
+    width: 75px;
+}
+/*css för shoppingcart funktionen*/
+#background {
+    position: fixed;
+    background-color: black;
+    opacity: 0.6;
+    width: 100%;
+    height: 10000%;
+    z-index: 999;
+    top: 0;
+}
+/*css för shopingcart rutan*/
+#shopping {
+    top: 260px;
+    position: fixed;
+    background-color: gray;
+    border: solid black 5px;
+    ;
+    width: 70%;
+    height: 1250px;
+    ;
+    z-index: 9999;
+    margin-left: 150px;
+}
+
+
+.boi {
+    display: none;
+}
+
+@media only screen and (max-width: 460px) {
+    #head {
+        width: 100%;
+        height: 250px;
+        background-color: gray;
+        z-index: 2;
+    }
+
+    #flex {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #logga {
+        width: 200px;
+    }
+
+    #kon {
+        z-index: 99999;
+    }
+
+    #cart {
+        width: 150px;
+    }
+
+    #background {
+        position: fixed;
+        background-color: black;
+        opacity: 0.6;
+        width: 100%;
+        height: 10000%;
+        z-index: 999;
+        top: 0;
+    }
+
+    #shopping {
+        top: 260px;
+        position: fixed;
+        background-color: gray;
+        border: solid black 5px;
+        ;
+        width: 70%;
+        height: 1250px;
+        ;
+        z-index: 9999;
+        margin-left: 150px;
+    }
+
+
+    .boi {
+        display: none;
+    }
+}

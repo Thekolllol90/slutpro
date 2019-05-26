@@ -1,0 +1,125 @@
+* { /*sänger av webbens egna inställnigar*/
+    margin: 0;
+    padding: 0;
+}
+
+#head { /*gör så att header sitter högst upp och följer med när man skrollar på sidan*/
+    position: fixed;
+    top: 0;
+}
+
+#flexx { /*gör så att allt innehåll lägger sig på ett snyggt sätt*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 25px;
+}
+
+#hot { /*gör så att hotspot bilden har en svart linje runt och att den är en bit ner från headern*/
+    margin-top: 25px;
+    border: solid black 3px;
+}
+
+#body { /*gör backgrounden ljusgrå och gör så att bodyn börjar där headern slutar*/
+    background-color: lightgray;
+    margin-top: 100px;
+}
+
+.bilder { /*gör så alla bilder har samma storlek och en svart linje runt sig*/
+    width: 150px;
+    height: 150px;
+    border: solid black 3px;
+}
+
+#bilderna { /*diven som bilderna ligger i, flyttar den ner från hotspoten*/
+    margin-left: 30px;
+    margin-top: 25px;
+    width: 70%;
+}
+
+#titel { /*storlek och background osv för titeln på sidan*/
+    width: 250px;
+    height: 30px;
+    border: solid black 5px;
+    font-size: 25px;
+    text-align: center;
+    background-color: gray;
+    margin-top: 25px;
+}
+
+#menu { /*gör så burger menyn är under headern och följer med sidan*/
+    position: absolute;
+    margin-top: 100px;
+    border-bottom: solid black 3px;
+}
+
+.menu-item a { /*gör så texten i burger menyn inte ser ut som länkar*/
+    text-decoration: none;
+    color: black;
+}
+
+@media only screen and (max-width: 460px) { /*css för mobil vy som inte funkar som det ska*/
+    #head {
+        position: fixed;
+        top: 0;
+    }
+
+    #flexx {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 25px;
+    }
+
+    #hot {
+        margin-top: 25px;
+        border: solid black 3px;
+    }
+
+    .pro {
+        margin-top: 25px;
+    }
+
+    #body {
+        background-color: lightgray;
+        margin-top: 250px;
+    }
+
+    .bilder {
+        width: 300px;
+        height: 300px;
+        border: solid black 3px;
+    }
+
+    #bilderna {
+        margin-left: 30px;
+        margin-top: 25px;
+    }
+
+    #titel {
+        width: 450px;
+        height: 60px;
+        border: solid black 5px;
+        font-size: 50px;
+        text-align: center;
+        background-color: gray;
+        margin-top: 25px;
+    }
+
+    #menu {
+        position: absolute;
+        margin-top: 249px;
+        border-bottom: solid black 3px;
+    }
+
+    .menu-item a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .produkt {
+        margin-bottom: 25px;
+    }
+}

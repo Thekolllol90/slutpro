@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#footer { /*ändrar storleken på skälva footern och lite annat*/
+    height: 100px;
+    width: 100%;
+    background-color: gray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 25px;
+    border-top: solid black 5px;
+}
+
+#tid { /*ändra storlek och utsende på texten*/
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.ti {
+    font-size: 10px;
+}
+
+#kontakt {
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 460px) {
+    #footer {
+        height: 250px;
+        width: 100%;
+        background-color: gray;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 25px;
+        border-top: solid black 5px;
+    }
+
+    #tid {
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    .ti {
+        font-size: 25px;
+    }
+
+    #kontakt {
+        font-size: 30px;
+    }
+}
